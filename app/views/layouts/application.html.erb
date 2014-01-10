@@ -3,28 +3,35 @@
 <!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
 <!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
 
-	<head>
-	  <title>Selarz & Sarbaz, LLC</title>
-	  <meta charset="utf-8">
-	  <meta name="description" content="Selarz Sarbaz Law Practice">
-	  <meta name="author" content="Selarz and Sarbaz">
-	  <!-- Google Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
-	  <%= stylesheet_link_tag    "application", media: "all" %>
-	  <%= javascript_include_tag "application" %>
-	  <%= csrf_meta_tags %>
-	  <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
-		<!--[if lt IE 9]>
-		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<script src="js/respond.min.js"></script>
-		<![endif]-->
-		<!--[if IE]>
-		<link rel="stylesheet" href="css/ie.css">
-		<![endif]-->
-	</head>
+<head>
+  <title>Selarz & Sarbaz, LLC</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Selarz Sarbaz Law Practice">
+  <meta name="author" content="Selarz and Sarbaz">
+  <!-- Google Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+ 	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag    "application", media: "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="js/respond.min.js"></script>
+  <![endif]-->
+  <!--[if IE]>
+  <link rel="stylesheet" href="css/ie.css">
+  <![endif]-->
+</head>
 	
 	<body class="home">
-		<%= yield %>
+
+		<%= render 'layouts/header' %>
+
+		<div class="wrap">
+			<%= yield %>
+		</div>
 	</body>
+
+	<%= render 'layouts/scripts' %>
 </html>
