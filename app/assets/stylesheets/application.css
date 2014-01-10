@@ -9,5 +9,19 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ *= require animations
+ *= require bootstrap
+ *= require graph
+ *= require ie
+ *= require nivo-slider
+ *= require prettyPhoto
+ *= require pricing-table
+ *= require spectrum
+ *= require style
+ *= require superfish
+ *= require switcher
+ *= require team-member
+ *= require theme-responsive
+ *= require_tree ../../../vendor/assets/stylesheets/revolution-slider/.
  *= require_tree .
  */
