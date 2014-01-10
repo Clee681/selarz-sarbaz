@@ -23,6 +23,7 @@
  *= require switcher
  *= require team-member
  *= require theme-responsive
+ *= require font-awesome
  *= require_tree ../../../vendor/assets/stylesheets/revolution-slider/.
  *= require_tree .
  */
