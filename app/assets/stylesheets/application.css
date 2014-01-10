@@ -11,6 +11,7 @@
  *= require_self
  *= require animations
  *= require bootstrap
+ *= require blue
  *= require graph
  *= require ie
  *= require nivo-slider
